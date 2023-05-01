@@ -1,7 +1,10 @@
 <template>
   <div>
     <h1>{{ count }}</h1>
-    <button class="btn btn-secondary" @click="increment">Increment</button>
+    <button class="btn btn-secondary" @click="increment">
+      <i class="bi-plus-lg"></i>
+      Increment
+    </button>
   </div>
 </template>
 
