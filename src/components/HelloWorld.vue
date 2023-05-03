@@ -10,17 +10,17 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       count: 1
     }
   },
 
   methods: {
-    increment() {
+    increment () {
       this.count++
     }
-  },
+  }
 }
 </script>
 

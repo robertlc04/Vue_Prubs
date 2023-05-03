@@ -1,16 +1,19 @@
 <template>
   <NavBar />
   <router-view />
+  <FooterBar />
 </template>
 
 <script>
 import NavBar from "./components/NavBar";
+import FooterBar from "./components/FooterBar";
 
 export default {
   components: {
     NavBar,
-  }
-}
+    FooterBar,
+  },
+};
 </script>
 
 <style>
@@ -19,11 +22,11 @@ export default {
   padding: 0px;
 }
 :root {
-    --primary-color: #8A817C;
-    --secondary-color: #BCB8B1 ;
-    --tertiary-color: #E0AFA0;
-    --background-primary: #f4f3ee;
-    --background-secondary: #463F3A;
+  --primary-color: #8a817c;
+  --secondary-color: #bcb8b1;
+  --tertiary-color: #e0afa0;
+  --background-primary: #f4f3ee;
+  --background-secondary: #463f3a;
 }
 #app {
   background-color: var(--background-primary);
