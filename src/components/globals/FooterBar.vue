@@ -27,7 +27,7 @@
   height: 100px;
   max-height: 300px;
   background-color: rgba(70, 63, 58, 0.8);
-  align-items: flex-end;
+  align-items: end;
 
   p {
     margin-bottom: 10px;
@@ -37,6 +37,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: end;
 
   div {
     width: 3%;

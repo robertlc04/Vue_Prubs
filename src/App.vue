@@ -5,15 +5,15 @@
 </template>
 
 <script>
-import NavBar from "./components/NavBar";
-import FooterBar from "./components/FooterBar";
+import NavBar from './components/globals/NavBar'
+import FooterBar from './components/globals/FooterBar'
 
 export default {
   components: {
     NavBar,
-    FooterBar,
-  },
-};
+    FooterBar
+  }
+}
 </script>
 
 <style>
