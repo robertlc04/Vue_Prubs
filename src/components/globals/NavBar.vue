@@ -56,39 +56,39 @@
 </template>
 <script>
 export default {
-  data () {
+  data() {
     return {
       mobile: false,
       isCollapsed: true,
       mobileNav: false,
-      windowWidth: null
-    }
+      windowWidth: null,
+    };
   },
-  created () {
-    window.addEventListener('resize', this.checkScreen)
-    this.checkScreen()
+  created() {
+    window.addEventListener("resize", this.checkScreen);
+    this.checkScreen();
   },
   methods: {
-    toggleMobileNav () {
-      this.mobileNav = !this.mobileNav
+    toggleMobileNav() {
+      this.mobileNav = !this.mobileNav;
     },
 
-    checkScreen () {
-      this.windowWidth = window.innerWidth
+    checkScreen() {
+      this.windowWidth = window.innerWidth;
       if (this.windowWidth <= 768) {
-        this.mobile = true
-        return
+        this.mobile = true;
+        return;
       }
-      this.mobile = false
-      this.mobileNav = false
-    }
+      this.mobile = false;
+      this.mobileNav = false;
+    },
   },
   watch: {
-    mobile () {
-      console.log(this.mobile, this.mobileNav)
-    }
-  }
-}
+    mobile() {
+      console.log(this.mobile, this.mobileNav);
+    },
+  },
+};
 </script>
 <style lang="scss" scoped>
 * {
@@ -186,6 +186,7 @@ header {
 
 /* Dropdown Config */
 .dropdown-nav {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   position: fixed;
